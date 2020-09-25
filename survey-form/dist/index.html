@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<html>
+  <body>
+    <header class="header">
+      <h1 id="title">survey form</h1>
+      <p id="description">Thank you for taking your time to do this quick survey and help us bring a change.
+    </header>
+  <main>
+    <form id="survey-form">
+      <div class="elements">
+        <label id="name-label">Name:&nbsp</label>
+        <input
+        type="text"
+        name="name"
+        id="name"
+        class="textField"
+        placeholder="Enter your name"
+        required
+      /></div>
+        <div class="elements">
+        <label id="email-label">Email:&nbsp</label>
+        <input
+        type="email"
+        name="email"
+        id="email"
+        class="textField"
+        placeholder="email"
+        required
+      />
+      </div>
+      <div class="elements">
+        <label id="number-label">age:&nbsp</label>
+        <input
+        type="number"
+        name="age"
+        id="number"
+        class="textField"
+        placeholder="age"
+        min="1"
+        max="99"
+        required
+      />
+      </div>
+      <div class="elements">
+      <label>
+        How was your experience with us?
+      </label><br>
+      <select id="dropdown" name="experience" class="textField" required>
+        <option disabled selected value>Select Experience</option>
+        <option value="poor">Poor</option>
+        <option value="good">Good</option>
+        <option value="excellent">Excellent</option>
+        </select>
+   </div>
+        <div class="elements">
+          <label>Would you recommend us to your friends?</label>
+          <label for="no" required>
+            <input id="no" type="radio" name="recommend" class="radio-buttons" value="no"/>no
+          </label>
+          <label for="absolutely" required>
+            <input id="absolutely" type="radio" name="recommend" class="radio-buttons" value="absolutely"/>Absolutely
+          </label>
+          <label for="not-sure" required>
+            <input id="not-sure" type="radio" name="recommend" class="radio-buttons" value="not-sure"/>Not sure
+          </label>
+        </div>
+      <div class="elements">
+        <label>Which was your favorite ride?</label>
+        <select id="dropdown" name="experience" class="textField" required>
+        <option disabled selected value>Select ride</option>
+        <option value="water-slides">Water slides</option>
+        <option value="the-power-coaster">The power coaster</option>
+        <option value="adrenaline-kickers">Adrenaline kickers</option>
+        </select>
+      </div>
+      <div class="elements">
+        <label>What would you like to see improved?</label>
+        <label for="hygiene">
+        <input
+               id="hygiene"
+               type="checkbox"
+               name="improvement"
+               class="radio-buttons"
+               value="hygiene"
+        />Hygiene
+          </label>
+        <label for="safety">
+        <input
+               id="safety"
+               type="checkbox"
+               name="improvement"
+               class="radio-buttons"
+               value="safety"
+        />Safety
+          </label>
+        <label for="staff">
+        <input
+               id="staff"
+               type="checkbox"
+               name="improvement"
+               class="radio-buttons"
+               value="staff"
+        />Staff
+          </label>
+        <label for="service">
+        <input
+               id="service"
+               type="checkbox"
+               name="improvement"
+               class="radio-buttons"
+               value="service"
+        />Service
+          </label>
+      </div>
+      <div class="elements">
+        <p>Any suggessitions or comments?</p>
+        <textarea
+        id="comments"
+        name="comment"
+        placeholder="Enter your suggestion here..."
+      ></textarea>
+      </div>
+      <div class="elements">
+        <button id="submit"> submit</button>
+      </div>
+  </main>
+ </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
